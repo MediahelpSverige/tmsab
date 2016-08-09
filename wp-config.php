@@ -92,7 +92,6 @@ if ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') ||
 //include ABSPATH . '/wp-config.default.php';
 
 // Load config file for current environment
-echo WP_ENV;
 include ABSPATH . '/wp-config.' . WP_ENV . '.php';
 
 // Define WordPress Site URLs if not already set in config files
