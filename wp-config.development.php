@@ -24,6 +24,8 @@ define('DB_PASSWORD', '');
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
 
+define('WP_CACHE', true)
+
 define('WP_HOME', 'http://localhost:8080/tmsab');
 define('WP_SITEURL', 'http://localhost:8080/tmsab');
 
