@@ -24,13 +24,14 @@ define('DB_PASSWORD', 'steel1992');
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
 
-define('WP_CACHE', true);
-
-define('WP_HOME', 'http://tmsab.mediahelpcrm.se');
-define('WP_SITEURL', 'http://tmsab.mediahelpcrm.se');
-
 
 $table_prefix  = 'wp_';
+
+//define('WP_HOME', 'http://tmsab.mediahelpcrm.se');
+//define('WP_SITEURL', 'http://tmsab.mediahelpcrm.se');
+
+
+
 
 /**
  * For developers: WordPress debugging mode.
