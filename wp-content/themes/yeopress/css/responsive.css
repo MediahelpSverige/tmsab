@@ -4,6 +4,7 @@
   }
 
   header .top-header {
+    height: 3rem;
     margin-top: 80px;
   }
   header .top-header .branding {
@@ -15,16 +16,30 @@
     padding-bottom: 20px;
     background-color: #b12727;
   }
+  header .top-header nav {
+    height: 3rem;
+  }
+  header .top-header nav li {
+    height: 3rem;
+  }
+  header .top-header nav a {
+    line-height: 3rem;
+  }
   header .top-header #right-nav {
     padding-right: 0px;
     width: initial;
   }
   header .top-header #left-nav {
-    padding-left: 50px;
+    padding-left: 270px;
     width: initial;
   }
   header .top-header #left-nav ul#menu-leftmeny {
     float: left;
+  }
+  header #local {
+    top: -80px;
+    right: 20px;
+    position: absolute;
   }
 
   #info-section #instafeed .insta {

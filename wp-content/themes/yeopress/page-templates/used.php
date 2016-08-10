@@ -10,6 +10,11 @@ get_header();
 
 <section id="produkter">
 <div class="banner" style="background-image:url(' <?php the_post_thumbnail_url( 'full' ); ?> ')">
+
+<div class="overlay-title-banner">
+
+<h1><?php the_title();?></h1>
+</div>
 	
 </div>
 

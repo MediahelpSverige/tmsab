@@ -59,12 +59,6 @@ console.log('first')
 
 				$('.overlay-title').mouseover(function(){
 
-
-
-
-
-
-
 					console.log('hover');
 
 					$(this).css({ 
@@ -93,6 +87,30 @@ console.log('first')
 					}
 
 						});
+
+				$('.overlay-title-banner').mouseover(function(){
+
+					console.log('hover');
+
+					$(this).css({ 
+								opacity:0,
+								visibility:'hidden',
+
+					});
+
+				})
+
+
+				$('.banner').mouseleave(function(){
+
+
+						$('.overlay-title-banner').css({
+								opacity:1,
+								visibility:'visible',
+							});
+
+
+				});
 
 
 

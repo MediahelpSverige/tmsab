@@ -1,5 +1,7 @@
 @media(max-width:1300px){
 
+	$headerHeight: 3rem;
+
 	.boxout{
 		display: none;
 	}
@@ -8,6 +10,8 @@
 
 
 		.top-header{
+
+			height: $headerHeight;
 
 
 
@@ -20,10 +24,25 @@
 				    right: 0px;
 				    margin:0px;
 				    margin-left: 0px!important;
-    top: -80px;
-    padding-bottom:20px;
-    background-color: #b12727;
+				    top: -80px;
+				    padding-bottom:20px;
+				    background-color: #b12727;
 
+			}
+
+
+			nav{
+
+
+				height: $headerHeight;
+
+				li{
+					height: $headerHeight;
+				}
+
+				a{
+					line-height: $headerHeight;
+				}
 			}
 
 
@@ -37,7 +56,7 @@
 		}
 
 		#left-nav{
-			padding-left:50px;
+			padding-left: 270px;
 			width: initial;
 
 
@@ -46,6 +65,13 @@
 		}
 		}
 
+			}
+
+
+			#local{
+				top: -80px;
+				right: 20px;
+				position:absolute;
 			}
 
 
@@ -222,6 +248,10 @@
 }
 
 @media(max-width:500px){
+
+	.worker{
+		
+	}
 
 
 	#intro p{

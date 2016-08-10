@@ -58,6 +58,7 @@ table {
   }
 
   header .top-header {
+    height: 3rem;
     margin-top: 80px;
   }
   header .top-header .branding {
@@ -69,16 +70,30 @@ table {
     padding-bottom: 20px;
     background-color: #b12727;
   }
+  header .top-header nav {
+    height: 3rem;
+  }
+  header .top-header nav li {
+    height: 3rem;
+  }
+  header .top-header nav a {
+    line-height: 3rem;
+  }
   header .top-header #right-nav {
     padding-right: 0px;
     width: initial;
   }
   header .top-header #left-nav {
-    padding-left: 50px;
+    padding-left: 270px;
     width: initial;
   }
   header .top-header #left-nav ul#menu-leftmeny {
     float: left;
+  }
+  header #local {
+    top: -80px;
+    right: 20px;
+    position: absolute;
   }
 
   #info-section #instafeed .insta {
@@ -189,6 +204,21 @@ table {
 }
 
 /*GENERAL RULES*/
+.title-border {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #d4d4d4;
+  position: relative;
+}
+.title-border:after {
+  content: "";
+  position: absolute;
+  left: -21px;
+  top: 0px;
+  background-color: #b12727;
+  height: 20px;
+  width: 2px;
+}
+
 body, html {
   height: 100%;
 }
@@ -199,10 +229,16 @@ body {
   color: #484848;
 }
 body .wpcf7-form-control-wrap input {
+  margin: 10px 0px;
   width: 100%;
+  border: 1px solid #d4d4d4;
+  padding: 5px 10px;
+  font-family: 'open-sans';
 }
 body .wpcf7-form-control-wrap textarea {
+  margin: 10px 0px;
   width: 100%;
+  border: 1px solid #d4d4d4;
 }
 
 .boxout {
@@ -274,7 +310,7 @@ video {
 .fa-search {
   color: white;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
   /* margin-right: 20px; */
   float: right;
@@ -326,6 +362,22 @@ video {
 
 .border {
   border: 2px solid;
+}
+
+.box-wrap {
+  background-color: white;
+  border: 1px solid #d4d4d4;
+  padding: 19px;
+}
+.box-wrap h4 {
+  color: #b12727;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 20px 0px 10px 0px;
+}
+.box-wrap a {
+  display: block;
+  margin: 10px 0px;
 }
 
 /*SWIPER STYLES*/
@@ -393,8 +445,44 @@ video {
   clear: both;
 }
 
+.banner .overlay-title-banner {
+  transition: 0.5s ease all;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 50%;
+  margin-top: -60px;
+  z-index: 9;
+  background-color: rgba(56, 56, 56, 0.1);
+  top: 52px;
+  bottom: 0px;
+}
+.banner .overlay-title-banner h1 {
+  /*display: inline-block; */
+  left: 0px;
+  right: 0px;
+  top: 50%;
+  bottom: 0px;
+  margin-top: -90px;
+  /* padding: 20px; */
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "montserrat";
+  font-size: 90px;
+}
+
 .page-wrapper {
   margin-top: 4.75rem;
+}
+.page-wrapper #kontakt p {
+  letter-spacing: 0.7px;
+  font-size: 16px;
+}
+.page-wrapper #kontakt .container {
+  margin: 100px auto;
 }
 .page-wrapper #kontakt .worker-wrap {
   display: -webkit-box;
@@ -415,7 +503,12 @@ video {
   width: 100%;
   text-align: center;
 }
+.page-wrapper #kontakt .worker-wrap strong {
+  font-weight: bold;
+  display: block;
+}
 .page-wrapper #kontakt .worker-wrap .worker {
+  text-align: left;
   align-content: flex-start;
   webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -423,10 +516,49 @@ video {
   flex-grow: 1;
   flex-wrap: wrap;
   flex-basis: calc(100%/4);
+  margin: 20px 0px;
+  height: 320px;
+}
+.page-wrapper #kontakt .worker-wrap .worker img {
+  display: inline-block;
+}
+.page-wrapper #kontakt .worker-wrap .worker h3 {
+  text-align: left;
+  margin: 10px 0px;
+  color: #b12727;
+}
+.page-wrapper #kontakt .worker-wrap .worker p {
+  letter-spacing: 0.5px;
+  font-size: 15px;
+}
+.page-wrapper #kontakt .worker-wrap .worker a {
+  display: block;
+  margin-top: 20px;
+  color: #b12727;
+}
+@media (max-width: 500px) {
+  .page-wrapper #kontakt .worker-wrap .worker {
+    text-align: center;
+    flex-basis: calc(100%/1);
+  }
+  .page-wrapper #kontakt .worker-wrap .worker h3 {
+    text-align: center;
+  }
+  .page-wrapper #kontakt .worker-wrap .worker p {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .page-wrapper #kontakt .worker-wrap .worker img {
+    width: 100%;
+    display: block;
+  }
 }
 .page-wrapper #kontakt .map-banner {
   margin-top: 5rem;
   width: 100%;
+  position: relative;
+  min-height: initial;
 }
 .page-wrapper #kontakt .map-banner iframe {
   width: 100%;
@@ -586,6 +718,7 @@ header {
   z-index: 99;
 }
 header .top-header {
+  position: relative;
   height: 5rem;
   background-color: #b12727;
   text-align: center;
@@ -690,6 +823,7 @@ header .top-header input {
   height: 35px;
   display: block;
   float: left;
+  border: none;
 }
 header .top-header button {
   display: block;
@@ -800,6 +934,8 @@ section .content-wrap {
 }
 section .container {
   padding: 15px;
+  margin: 100px auto;
+  max-width: 1280px;
 }
 section .container p {
   letter-spacing: 1px;
@@ -1129,6 +1265,14 @@ section#facebook {
   right: -20px;
   z-index: 2;
   background: repeating-linear-gradient(45deg, #949494, #949494 10px, #FFFFFF 10px, #FFFFFF 20px);
+}
+
+.red-btn {
+  border: none;
+  background-color: #b12727;
+  color: white;
+  font-family: "open-sans";
+  padding: 5px 15px;
 }
 
 .add-btn {
