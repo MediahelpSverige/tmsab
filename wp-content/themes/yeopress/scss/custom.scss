@@ -1,9 +1,11 @@
 $mq-mobile-narrower: "only screen and (max-width : 320px)";
 
+$blue:blue;
+
 $gold:#E5A745;
 $maincolor: #000000;
 $darkermaincolor :#b12727;
-$backgroundColor: white;
+$backgroundColor: #f9f9f9;
 $bigfontsize: 40px;
 $defaultFont: "open-sans";
 $titlefont: "ubuntu";
@@ -54,6 +56,17 @@ body{
 	font-family: $defaultFont;
 	line-height:1;
 	color: $textcolor;
+
+
+	.wpcf7-form-control-wrap{
+		input{
+			width: 100%;
+		}
+
+		textarea{
+			width: 100%;
+		}
+	}
 }
 
 .boxout{
@@ -445,7 +458,7 @@ body{
 
 
 	.page-back{
-		background-color:white;
+		background-color:$backgroundColor;
 	}
 
 
@@ -837,6 +850,8 @@ padding: 80px 0px;
 
 section{
 
+	background-color:$backgroundColor;
+
 	.content-wrap{
 		margin:90px 0px;
 	}
@@ -860,7 +875,6 @@ section{
 
 section#facebook{
 
-    background-color: white;
     padding: 80px 0px;
     margin: 0px;
 
@@ -1717,6 +1731,8 @@ footer{
 		text-align: center;
 
 		.footer-copyright{
+
+			text-align: center;
 
 			p{
 

@@ -96,6 +96,7 @@
 			</div>
 			</div>
 		</section>
+		<div class="clearfix"></div>
 	</div>
 
 	<?php endwhile; else : ?>

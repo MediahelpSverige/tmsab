@@ -7,6 +7,7 @@
         <meta charset="<?php bloginfo( 'charset' ) ?>">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
+        <meta name="theme-color" content="#b12727">
         <title><?php wp_title( '|', true, 'right' ) ?></title>
 		<meta name="author" content="">
 		<link rel="icon" href="<?php bloginfo('template_url') ?>/images/icon.png">

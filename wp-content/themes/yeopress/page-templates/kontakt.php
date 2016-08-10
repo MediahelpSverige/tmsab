@@ -17,7 +17,7 @@ get_header();
 
 <div class="col-md-8 col-sm-8">
 
-<?php the_title('<h1></h1>');?>
+<h1><?php the_title();?></h1>
 
 <?php $args = array('post_type' => 'worker'); ?>
 
@@ -38,9 +38,12 @@ if ( $the_query->have_posts() ) { ?>
 	
 	<div class="worker">
 
-	<h3><?php the_title();?></h3>
+
 
 		<img src="<?php the_post_thumbnail_url();?>">
+			<h3><?php the_title();?></h3>
+			<?php the_field('info'); ?>
+
 
 	</div>
 

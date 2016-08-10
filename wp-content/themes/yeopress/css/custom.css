@@ -170,7 +170,7 @@ table {
     padding: 10px 10px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   #info-section #instafeed .insta {
     flex-basis: calc(100%/2);
   }
@@ -197,6 +197,12 @@ body {
   font-family: "open-sans";
   line-height: 1;
   color: #484848;
+}
+body .wpcf7-form-control-wrap input {
+  width: 100%;
+}
+body .wpcf7-form-control-wrap textarea {
+  width: 100%;
 }
 
 .boxout {
@@ -501,7 +507,7 @@ body section {
   position: relative;
 }
 body .page-back {
-  background-color: white;
+  background-color: #f9f9f9;
 }
 body #insta-title {
   text-align: center;
@@ -786,6 +792,9 @@ section#welcome-section-para #text p {
   text-shadow: 1px 1px 2px black;
 }
 
+section {
+  background-color: #f9f9f9;
+}
 section .content-wrap {
   margin: 90px 0px;
 }
@@ -797,7 +806,6 @@ section .container p {
 }
 
 section#facebook {
-  background-color: white;
   padding: 80px 0px;
   margin: 0px;
 }
@@ -1373,6 +1381,9 @@ footer .bot-footer {
   width: 100%;
   visibility: hidden;
   background-color: black;
+  text-align: center;
+}
+footer .bot-footer .footer-copyright {
   text-align: center;
 }
 footer .bot-footer .footer-copyright p {
