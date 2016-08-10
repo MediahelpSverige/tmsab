@@ -89,7 +89,7 @@ if ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') ||
 }
 
 // Load default config
-include ABSPATH . '/wp-config.default.php';
+//include ABSPATH . '/wp-config.default.php';
 
 // Load config file for current environment
 include ABSPATH . '/wp-config.' . WP_ENV . '.php';
