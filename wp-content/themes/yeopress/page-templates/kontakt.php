@@ -48,6 +48,7 @@ if ( $the_query->have_posts() ) { ?>
 
 		<img src="<?php the_post_thumbnail_url();?>">
 			<h3><?php the_title();?></h3>
+			<strong><?php the_field('titel'); ?></strong>
 			<?php the_field('info'); ?>
 
 

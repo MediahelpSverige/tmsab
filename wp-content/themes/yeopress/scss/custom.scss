@@ -14,7 +14,7 @@ $secondaryColor: #ff0000;
 $sitegray: #949494;
 $border:1px solid $sitegray;
 $headerHeight: 5rem;
-$defaultborder: 1px solid #d4d4d4;
+$defaultborder: 1px solid #ececec;
 $blackgradient: to top, #000000, rgba(255, 255, 255, 0) 40%;
 
 
@@ -240,7 +240,7 @@ background:linear-gradient($blackgradient);
  		margin:10px 0px;
  	}
  	background-color:white;
- 	border: 1px solid #d4d4d4;
+ 	border: $defaultborder;
  	    padding: 19px;
  }
 
@@ -511,6 +511,49 @@ content: "";
 
 
 
+.worker{
+
+	p{
+
+		letter-spacing: initial;
+		font-size: 15px;
+
+		strong{
+			font-size:17px;
+		}
+	}
+}
+
+.prod-wrap{
+
+	margin: 50px auto;
+
+
+
+	.produkt{
+
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+			margin: auto;
+		}
+
+		h3{
+			font-family: montserrat;
+
+		}
+
+
+
+	}
+}
+
+
+
+
+
+
 .whitewrap{
 
 	background-color: rgb(255, 248, 237);
@@ -775,22 +818,41 @@ height: $headerHeight;
 
 	#local{
 		position:relative;
-		float: right;
+		
 	}
 
 
 
 	.search-wrap{
-		position:relative;
+		float: right;
 		height: $headerHeight;
 		margin-right: 20px;
 
 		.searchbar{
-			position:absolute;
-			left: 0px;
-			right: 0px;
-			bottom:-20px;
+position: absolute;
+    left: 0px;
+    right: -60px;
+    top: 80px;
 			display: none;
+
+			input{
+
+	font-size: 70px;
+    padding: 5px 10px;
+    font-family: 'montserrat';
+
+    width: 100%;
+    height: 100vh;
+    display: block;
+    float: left;
+    border: none;
+    text-align:center;
+
+    &:focus{
+    	outline: none;
+    }
+
+			}
 
 		}
 	}
@@ -845,11 +907,11 @@ height: $headerHeight;
     padding: 0 12px;
     text-decoration: none;
     color: white;
-    font-size: 17px;
+    font-size: 16px;
     line-height: $headerHeight;
     transition: all 1s ease;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   a:hover{
@@ -1090,10 +1152,13 @@ section#facebook{
 
 	#instafeed{
 
+		/*
+
 		display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    */
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1112,6 +1177,10 @@ section#facebook{
 		.insta{
 
 
+			float: left;
+    width: calc(100%/6);
+
+	
 
 			webkit-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -1130,6 +1199,8 @@ section#facebook{
 			cursor: pointer;
 
 			position:relative;
+
+	
 			.text{
 transition: 0.5s ease all;
 

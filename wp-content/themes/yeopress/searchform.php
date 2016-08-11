@@ -4,7 +4,7 @@
 
     <div class="searchbar">
 
-        <input type="text" value="<?php echo get_search_query(); ?>" placeholder="Sök bland all annonser" name="s" id="s" />
+        <input type="text" value="<?php echo get_search_query(); ?>" placeholder="Sök på sidan" name="s" id="s" />
 
 
             
