@@ -481,6 +481,34 @@ video {
 .page-wrapper {
   margin-top: 4.75rem;
 }
+.page-wrapper #produkter .worker {
+  position: relative;
+  margin: 40px 0px;
+}
+.page-wrapper #produkter .worker img {
+  display: block;
+}
+.page-wrapper #produkter .worker h3 {
+  font-size: 17px;
+  margin-top: 10px;
+}
+.page-wrapper #produkter .worker i {
+  margin-right: 10px;
+  display: block;
+  float: left;
+  color: white;
+  background-color: #b12727;
+  width: 27px;
+  text-align: center;
+  padding: 5px 0px;
+  border-radius: 2px;
+}
+.page-wrapper #produkter .worker:first-child {
+  margin-top: 20px;
+}
+.page-wrapper #produkter .worker a {
+  color: red;
+}
 .page-wrapper #kontakt p {
   letter-spacing: 0.7px;
   font-size: 16px;
@@ -580,6 +608,9 @@ video {
 .page-wrapper .container .prod-wrap {
   margin: 50px auto;
 }
+.page-wrapper .container .prod-wrap .produkt {
+  margin: 20px 0px;
+}
 .page-wrapper .container .prod-wrap .produkt img {
   display: block;
   width: 100%;
@@ -588,6 +619,7 @@ video {
 }
 .page-wrapper .container .prod-wrap .produkt h3 {
   font-family: montserrat;
+  margin-top: 20px;
 }
 .page-wrapper .container .whitewrap {
   background-color: #fff8ed;

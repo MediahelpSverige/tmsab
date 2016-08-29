@@ -375,6 +375,46 @@ content: "";
 
 .page-wrapper{
 
+	#produkter{
+
+
+
+		.worker{
+			position:relative;
+			margin:40px 0px;
+			img{
+				display: block;
+			}
+			h3{
+				font-size: 17px;
+				margin-top: 10px;
+			}
+
+			i{
+				margin-right: 10px;
+    display: block;
+    float: left;
+    color: white;
+    background-color: #b12727;
+    width: 27px;
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 2px;
+			}
+
+			&:first-child{
+				margin-top: 20px;
+			}
+
+			a{
+				color: red;
+
+			}
+		}
+
+
+	}
+
 
 	#kontakt{
 
@@ -532,6 +572,8 @@ content: "";
 
 	.produkt{
 
+		    margin: 20px 0px;
+
 		img{
 			display: block;
 			width: 100%;
@@ -541,6 +583,7 @@ content: "";
 
 		h3{
 			font-family: montserrat;
+			margin-top: 20px;
 
 		}
 
