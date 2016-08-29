@@ -19,6 +19,11 @@ get_header();
 	
 </div>
 
+
+	<?php endwhile; else : ?>
+	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endif; ?>
+
 <div class="container">
 
 <div class="row">
@@ -45,13 +50,19 @@ get_header();
 
 			<?php $the_query->the_post(); ?>
 
-			<div class="produkt col-md-6 col-sm-6">
+			<div class="produkt col-md-6 col-sm-6" >
 
-
-
-			<?php the_post_thumbnail('large'); ?>
+			<a href="<?php the_permalink();?>">
+			<div class="prod_img" style="background-image:url('<?php the_post_thumbnail_url('large')?>')">
+			<div class="overlay-title-banner" style="opacity: 1; visibility: visible;">
 
 			<h3><?php the_title(); ?></h3>
+
+			</div>
+
+			</div>
+			</a>
+			
 				
 
 
@@ -67,7 +78,7 @@ get_header();
 
 <div class="clearfix"></div>
 
-<?php wp_reset_postdata(); ?>
+<?php// wp_reset_postdata(); ?>
 
 
 		</div>
@@ -79,7 +90,10 @@ get_header();
 
 		} ?>
 
-	<h3 class="title-border">Leverantörer</h3>
+
+
+
+
 	</div>	
 
 	
@@ -92,6 +106,7 @@ get_header();
 
 <?php $args = array(
 	'post_type' => 'worker', 
+	'posts_per_page' => 3 ,
 	'tax_query' => array( 
 		array(
 			'taxonomy' => 'uppdrag',
@@ -146,21 +161,90 @@ if ( $the_query->have_posts() ) { ?>
 		<div class="clearfix"></div>
 
 </div>
+
+
 </div>
 	<?php the_content(); ?>
 
 	</div>
 
+			<div class="box-wrap">
+
+
+
+	<h3 class="title-border">Leverantörer</h3>
+
+	<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+
+
+<?php $dbarg = array( 'post_type' => 'leverantor', 'posts_per_page' => -1 ); ?>
+
+
+	<?php $my_query = new WP_Query( $dbarg );  ?>
+
+
+	<?php if ($my_query->have_posts() ) { ?>
+
+
+
+
+				<?php while ( $my_query->have_posts() ) { ?>
+
+					<div class="swiper-slide">
+
+
+					<?php $my_query->the_post(); ?>
+
+
+					<?php the_post_thumbnail('large'); ?>
+
+					</div>
+
+
+					<?php } ?>
+
+
+					<?php wp_reset_postdata(); ?>
+
+
+	<?php }else{
+
+		echo "no posts";
+
+
+		} ?>
+
+		</div>
+
+		</div>
+		</div>
+
 
 </div>
+
+
+
 			
 </section>
 
 </div>
 
-	<?php endwhile; else : ?>
-	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-<?php endif; ?>
+<script type="text/javascript">
+	
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop:true,
+        slidesPerView: 5,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+</script>
+
 
 <?php 
 

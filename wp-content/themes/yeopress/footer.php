@@ -31,16 +31,6 @@
 		    <script>
 console.log('first')
 
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        loop:true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        centeredSlides: true,
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false
-    });
     </script>
     <script type="text/javascript">
     	console.log('footer')
@@ -88,7 +78,7 @@ console.log('first')
 
 						});
 
-				$('.overlay-title-banner').mouseover(function(){
+				$('.banner .overlay-title-banner').mouseover(function(){
 
 					console.log('hover');
 
@@ -104,7 +94,32 @@ console.log('first')
 				$('.banner').mouseleave(function(){
 
 
-						$('.overlay-title-banner').css({
+						$('.banner .overlay-title-banner').css({
+								opacity:1,
+								visibility:'visible',
+							});
+
+
+				});
+
+
+								$('.prod_img .overlay-title-banner').mouseover(function(){
+
+					console.log('hover');
+
+					$(this).css({ 
+								opacity:0,
+								visibility:'hidden',
+
+					});
+
+				})
+
+
+				$('.prod_img').mouseleave(function(){
+
+
+						$('.prod_img .overlay-title-banner').css({
 								opacity:1,
 								visibility:'visible',
 							});

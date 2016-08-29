@@ -283,7 +283,7 @@ $labels = array(
 
 			'name'                => __( 'Leverantör', 'text-domain' ),
 		'singular_name'       => __( 'Leverantör', 'text-domain' ),
-		'add_new'             => _x( 'Lägg till en ny produkt', 'text-domain', 'text-domain' ),
+		'add_new'             => _x( 'Lägg till en ny leverantör', 'text-domain', 'text-domain' ),
 		'add_new_item'        => __( 'Add New Singular Name', 'text-domain' ),
 		'edit_item'           => __( 'Edit Singular Name', 'text-domain' ),
 		'new_item'            => __( 'New Singular Name', 'text-domain' ),
@@ -375,7 +375,7 @@ $args = array(
 		'supports'            => array(
 			'title', 'author', 'thumbnail',
 			'excerpt','custom-fields', 'trackbacks', 'comments',
-			'revisions', 'page-attributes', 'post-formats'
+			'revisions', 'page-attributes', 'post-formats', 'editor'
 			)
 
 
