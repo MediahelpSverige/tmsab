@@ -12,7 +12,7 @@
 		<meta name="author" content="">
 		<link rel="icon" href="<?php bloginfo('template_url') ?>/images/icon.png">
 		<link href="http://vjs.zencdn.net/5.10.4/video-js.css" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,700|Open+Sans|Roboto" rel="stylesheet">
 
 		<script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.js"></script>
 

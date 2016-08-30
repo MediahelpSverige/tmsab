@@ -376,6 +376,10 @@ video {
   border: 1px solid #ececec;
   padding: 19px;
 }
+.box-wrap iframe {
+  width: 100%;
+  overflow: hidden;
+}
 .box-wrap h4 {
   color: #b12727;
   font-size: 17px;
@@ -608,6 +612,10 @@ video {
 }
 .page-wrapper .container p {
   line-height: 1.25;
+  font-family: Lato;
+}
+.page-wrapper .container .title-border {
+  font-family: lato;
 }
 .page-wrapper .container .worker p {
   letter-spacing: initial;
@@ -1209,7 +1217,7 @@ section#facebook {
   text-align: left;
   font-size: 19px;
   line-height: 1.5rem;
-  padding: 10px 90px;
+  padding: 10px 50px;
   margin: 50px 0px;
 }
 #intro img {
@@ -1219,6 +1227,7 @@ section#facebook {
 }
 
 #welcome-section {
+  background-position: 50%;
   background-size: cover;
   height: 600px;
   padding: 80px 0px;
