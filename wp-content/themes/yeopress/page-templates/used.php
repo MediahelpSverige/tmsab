@@ -87,7 +87,7 @@ if ( $the_query->have_posts() ) { ?>
 			<h3><?php the_title();?></h3>
 			<strong><?php the_field('titel'); ?></strong>
 			<div class="phone"><i class="fa fa-phone"></i><span><?php the_field('telefon');?></span><div class="clearfix"></div></div>
-			<div class="email"><i class="fa fa-envelope-o"></i><span><?php the_field('email');?></span><div class="clearfix"></div></div>
+			<div class="email"><i class="fa fa-envelope-o"></i><a href="mailto:<?php the_field('email'); ?>"><?php the_field('email');?></a><div class="clearfix"></div></div>
 		<div class="clearfix"></div>
 
 

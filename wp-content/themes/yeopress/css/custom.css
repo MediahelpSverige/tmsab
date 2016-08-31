@@ -533,7 +533,7 @@ video {
 .page-wrapper .worker .phone span {
   font-size: 14px;
 }
-.page-wrapper .worker .email span {
+.page-wrapper .worker .email a {
   font-size: 14px;
 }
 .page-wrapper .worker i {
