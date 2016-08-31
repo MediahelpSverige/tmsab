@@ -203,7 +203,7 @@ if ( $the_query->have_posts() ) { ?>
 					<?php $my_query->the_post(); ?>
 
 
-					<?php the_post_thumbnail('large'); ?>
+					<a href="<?php the_field('permalink');?>"><?php the_post_thumbnail('large'); ?></a>
 
 					</div>
 

@@ -403,8 +403,10 @@ video {
   top: 0px;
   bottom: 0px;
   right: 0px;
-  max-height: 60px;
+  max-height: 65px;
+  opacity: 0.7;
   max-width: 100%;
+  transition: 0.7s ease all;
   left: 0px;
   margin: auto;
   height: auto;
@@ -420,6 +422,9 @@ video {
         			}
 
         			*/
+}
+.swiper-container .swiper-slide:hover img {
+  opacity: 1;
 }
 .swiper-container .swiper-slide h2 {
   color: white;
