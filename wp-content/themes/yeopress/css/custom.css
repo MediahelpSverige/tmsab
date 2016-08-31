@@ -209,7 +209,8 @@ table {
   border-bottom: 1px solid #d4d4d4;
   position: relative;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  line-height: 26px;
 }
 .title-border:after {
   content: "";
@@ -520,6 +521,29 @@ video {
   margin-top: 20px;
 }
 .page-wrapper #produkter .worker a {
+  color: red;
+}
+.page-wrapper .worker .phone span {
+  font-size: 14px;
+}
+.page-wrapper .worker .phone .email {
+  font-size: 14px;
+}
+.page-wrapper .worker i {
+  margin-right: 10px;
+  display: block;
+  float: left;
+  color: white;
+  background-color: #b12727;
+  width: 27px;
+  text-align: center;
+  padding: 5px 0px;
+  border-radius: 2px;
+}
+.page-wrapper .worker:first-child {
+  margin-top: 20px;
+}
+.page-wrapper .worker a {
   color: red;
 }
 .page-wrapper #kontakt p {

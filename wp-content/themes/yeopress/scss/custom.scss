@@ -56,7 +56,8 @@ $graystripes: 45deg,
 	border-bottom:1px solid #d4d4d4;
 	position:relative;
 	text-align:left;
-	margin-bottom:20px;
+	margin-bottom:25px;
+	line-height:26px;
 
 	&:after{
 
@@ -436,6 +437,40 @@ background:linear-gradient($blackgradient);
 		}
 
 
+	}
+
+
+	.worker{
+		.phone{
+			span{
+				font-size: 14px;
+			}
+
+			.email{
+				font-size: 14px;
+			}
+		}
+
+					i{
+				margin-right: 10px;
+    display: block;
+    float: left;
+    color: white;
+    background-color: #b12727;
+    width: 27px;
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 2px;
+			}
+
+			&:first-child{
+				margin-top: 20px;
+			}
+
+			a{
+				color: red;
+
+			}
 	}
 
 
