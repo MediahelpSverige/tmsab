@@ -26,7 +26,7 @@ get_header();
 
 <h3 class="title-border">Vi annonserar även på blocket!</h3>
 
-<img src="http://tmsab.mediahelpcrm.se/wp-content/uploads/2016/08/Blocket.se_logo.png">
+<a href="https://www.blocket.se/traktor--maskin-i-sormland"><img src="http://tmsab.mediahelpcrm.se/wp-content/uploads/2016/08/Blocket.se_logo.png"></a>
 
 </div>
 
@@ -85,7 +85,10 @@ if ( $the_query->have_posts() ) { ?>
 
 		<img src="<?php the_post_thumbnail_url();?>">
 			<h3><?php the_title();?></h3>
-			<?php the_field('info'); ?>
+			<strong><?php the_field('titel'); ?></strong>
+			<div class="phone"><i class="fa fa-phone"></i><span><?php the_field('telefon');?></span><div class="clearfix"></div></div>
+			<div class="email"><i class="fa fa-envelope-o"></i><span><?php the_field('email');?></span><div class="clearfix"></div></div>
+		<div class="clearfix"></div>
 
 
 	</div>

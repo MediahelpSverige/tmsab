@@ -139,9 +139,9 @@ if ( $the_query->have_posts() ) { ?>
 
 		<img src="<?php the_post_thumbnail_url();?>">
 			<h3><?php the_title();?></h3>
-			<div class="emp-title"><strong><?php the_field('title'); ?></strong></div>
-			<div class="phone"><i class="fa fa-phone"></i><span><?php the_field('telefon');?></span></div>
-			<div class="email"><i class="fa fa-envelope-o"></i><span><?php the_field('email');?></span></div>
+			<div class="emp-title"><strong><?php the_field('title'); ?></strong><div class="clearfix"></div></div>
+			<div class="phone"><i class="fa fa-phone"></i><span><?php the_field('telefon');?></span><div class="clearfix"></div></div>
+			<div class="email"><i class="fa fa-envelope-o"></i><span><?php the_field('email');?></span><div class="clearfix"></div></div>
 
 			<div class="clearfix"></div>
 

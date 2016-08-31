@@ -487,6 +487,10 @@ video {
 .page-wrapper {
   margin-top: 4.75rem;
 }
+.page-wrapper #produkter .col-md-9 a img {
+  max-width: 100%;
+  height: auto;
+}
 .page-wrapper #produkter .prod-wrap {
   margin-top: 0px;
 }

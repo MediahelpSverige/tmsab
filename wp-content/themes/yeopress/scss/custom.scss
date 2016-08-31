@@ -391,6 +391,17 @@ background:linear-gradient($blackgradient);
 
 	#produkter{
 
+		.col-md-9 {
+
+			a{
+				img{
+					max-width: 100%;
+					height: auto;
+				}
+			}
+
+		}
+
 		.prod-wrap{
 			margin-top: 0px;
 		}
