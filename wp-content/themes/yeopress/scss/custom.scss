@@ -453,12 +453,18 @@ background:linear-gradient($blackgradient);
 
 	.worker{
 		.phone{
+			margin-bottom: 5px;
 			span{
 				font-size: 14px;
 			}
+		}
 
 			.email{
-				font-size: 14px;
+
+
+				span{
+
+					font-size: 14px;
 			}
 		}
 

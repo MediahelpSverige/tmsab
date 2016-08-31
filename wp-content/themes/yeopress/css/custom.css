@@ -527,10 +527,13 @@ video {
 .page-wrapper #produkter .worker a {
   color: red;
 }
+.page-wrapper .worker .phone {
+  margin-bottom: 5px;
+}
 .page-wrapper .worker .phone span {
   font-size: 14px;
 }
-.page-wrapper .worker .phone .email {
+.page-wrapper .worker .email span {
   font-size: 14px;
 }
 .page-wrapper .worker i {
