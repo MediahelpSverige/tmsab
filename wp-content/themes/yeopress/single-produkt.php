@@ -34,7 +34,7 @@ get_header();
 
 <?php $args = array(
 	'post_type' => 'worker', 
-	'posts_per_page' => 3 ,
+	'posts_per_page' => -1,
 	'tax_query' => array( 
 		array(
 			'taxonomy' => 'uppdrag',
@@ -67,7 +67,10 @@ if ( $the_query->have_posts() ) { ?>
 
 		<img src="<?php the_post_thumbnail_url();?>">
 			<h3><?php the_title();?></h3>
-			<?php the_field('info'); ?>
+						<strong><?php the_field('titel'); ?></strong>
+			<div class="phone"><i class="fa fa-phone"></i><span><?php the_field('telefon');?></span><div class="clearfix"></div></div>
+			<div class="email"><i class="fa fa-envelope-o"></i><a href="mailto:<?php the_field('email'); ?>"><?php the_field('email');?></a><div class="clearfix"></div></div>
+		<div class="clearfix"></div>
 
 
 	</div>
