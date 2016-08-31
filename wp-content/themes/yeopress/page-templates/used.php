@@ -52,7 +52,7 @@ get_header();
 
 <?php $args = array(
 	'post_type' => 'worker', 
-	'posts_per_page' => 3 ,
+	'posts_per_page' => -1 ,
 	'tax_query' => array( 
 		array(
 			'taxonomy' => 'uppdrag',
