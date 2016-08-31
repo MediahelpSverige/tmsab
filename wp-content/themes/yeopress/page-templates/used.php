@@ -21,6 +21,16 @@ get_header();
 <div class="container">
 
 <div class="col-md-9">
+
+	<div class="box-wrap">
+
+<h3 class="title-border">Vi annonserar även på blocket!</h3>
+
+<img src="http://tmsab.mediahelpcrm.se/wp-content/uploads/2016/08/Blocket.se_logo.png">
+
+</div>
+
+
 	<div class="box-wrap">
 
 <h3 class="title-border"><?php the_title(); ?></h3>

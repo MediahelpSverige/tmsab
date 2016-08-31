@@ -113,10 +113,6 @@
   }
 }
 @media (max-width: 600px) {
-  header nav ul {
-    display: none;
-  }
-
   .banner .welcomebox {
     width: 100%;
   }

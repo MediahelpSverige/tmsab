@@ -139,7 +139,9 @@ if ( $the_query->have_posts() ) { ?>
 
 		<img src="<?php the_post_thumbnail_url();?>">
 			<h3><?php the_title();?></h3>
-			<?php the_field('info'); ?>
+			<div class="emp-title"><strong><?php the_field('title'); ?></strong></div>
+			<div class="phone"><i class="fa fa-phone"></i><?php the_field('phone');?></div>
+			<div class="email"><i class="fa fa-envelope-o"></i><?php the_field('email');?></div>
 
 
 	</div>
@@ -241,7 +243,28 @@ if ( $the_query->have_posts() ) { ?>
         slidesPerView: 5,
         centeredSlides: true,
         autoplay: 2500,
-        autoplayDisableOnInteraction: false
+        autoplayDisableOnInteraction: false,
+
+        breakpoints: {
+
+        	    320: {
+      slidesPerView: 1,
+      spaceBetweenSlides: 10
+    },
+    // when window width is <= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetweenSlides: 20
+    },
+    // when window width is <= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetweenSlides: 30
+    }
+
+        }
+
+
     });
 </script>
 

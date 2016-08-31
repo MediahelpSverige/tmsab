@@ -167,10 +167,6 @@ table {
   }
 }
 @media (max-width: 600px) {
-  header nav ul {
-    display: none;
-  }
-
   .banner .welcomebox {
     width: 100%;
   }
@@ -502,6 +498,8 @@ video {
 }
 .page-wrapper #produkter .worker img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .page-wrapper #produkter .worker h3 {
   font-size: 17px;
@@ -553,6 +551,7 @@ video {
 .page-wrapper #kontakt .worker-wrap strong {
   font-weight: bold;
   display: block;
+  font-size: 15px;
 }
 .page-wrapper #kontakt .worker-wrap .worker {
   text-align: left;
@@ -573,6 +572,7 @@ video {
   text-align: left;
   margin: 10px 0px;
   color: #b12727;
+  font-size: 17px;
 }
 .page-wrapper #kontakt .worker-wrap .worker p {
   letter-spacing: 0.5px;
@@ -629,11 +629,11 @@ video {
 }
 .page-wrapper .container .prod-wrap .produkt {
   padding: 15px;
-  height: 250px;
+  height: 300px;
   margin: 15px 0px;
 }
 .page-wrapper .container .prod-wrap .produkt .prod_img {
-  height: 250px;
+  height: 300px;
   background-size: cover;
   display: block;
   position: relative;
@@ -645,10 +645,9 @@ video {
   left: 0px;
   right: 0px;
   top: 50%;
-  margin-top: -60px;
   z-index: 9;
-  background-color: rgba(56, 56, 56, 0.1);
-  top: 52px;
+  background-color: rgba(56, 56, 56, 0.2);
+  top: 0px;
   bottom: 0px;
 }
 .page-wrapper .container .prod-wrap .produkt .prod_img h3 {

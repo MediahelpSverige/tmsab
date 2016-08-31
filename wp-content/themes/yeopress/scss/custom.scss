@@ -35,7 +35,7 @@ $graystripes: 45deg,
 				  #949494,
 				  #949494 10px,
 				  #FFFFFF  10px,
-				  #FFFFFF  20px ;
+				  #FFFFFF  20px;
 
 
 
@@ -405,6 +405,8 @@ background:linear-gradient($blackgradient);
 			margin:40px 0px;
 			img{
 				display: block;
+				max-width: 100%;
+   				 height: auto;
 			}
 			h3{
 				font-size: 17px;
@@ -471,6 +473,7 @@ background:linear-gradient($blackgradient);
     	font-weight: bold;
     	//margin-bottom: 5px;
     	display: block;
+    	font-size: 15px;
     }
 
 
@@ -498,6 +501,7 @@ background:linear-gradient($blackgradient);
 					text-align:left;
 					margin: 10px 0px;
 					color: $darkermaincolor;
+					font-size: 17px;
 				}
 				p{
 					letter-spacing: 0.5px;
@@ -600,7 +604,7 @@ background:linear-gradient($blackgradient);
 
 		padding: 15px;
 
-		height: 250px;
+		height: 300px;
 		margin: 15px 0px;
 
 
@@ -608,7 +612,7 @@ background:linear-gradient($blackgradient);
 
 
 
-			height: 250px;
+			height: 300px;
 			background-size:cover;
 			display: block;
 			position:relative;
@@ -621,10 +625,9 @@ background:linear-gradient($blackgradient);
     left: 0px;
     right: 0px;
     top: 50%;
-    margin-top: -60px;
     z-index: 9;
-    background-color: rgba(56, 56, 56, 0.1);
-    top: 52px;
+    background-color: rgba(56, 56, 56, 0.2);
+    top: 0px;
     bottom: 0px;
 
 
