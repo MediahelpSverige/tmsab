@@ -55,9 +55,9 @@
 			foreach( $posts as $post ) :
 				setup_postdata($post); ?>
 
-			<div class="row">
+			<div class="row" id="sale-form">
 
-			<div class="col-md-6 col-sm-6">
+			<div class="col-md-6 col-sm-6" >
 
 			<div class="worker">
 

@@ -402,24 +402,33 @@ video {
   line-height: 24px;
 }
 
-.email-form .form-row {
+#sale-form {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#sale-form h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+#sale-form .email-form .form-row {
   display: block;
   width: 100%;
   clear: both;
   margin: 10px 0px;
   min-height: 40px;
 }
-.email-form .form-row textarea {
+#sale-form .email-form .form-row textarea {
   float: right;
   width: 100%;
 }
-.email-form .form-row label {
+#sale-form .email-form .form-row label {
   display: block;
   text-align: left;
   float: left;
   font-size: 14px;
+  width: 100%;
 }
-.email-form .form-row input {
+#sale-form .email-form .form-row input {
   display: block;
   float: right;
 }
