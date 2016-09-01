@@ -395,6 +395,7 @@ video {
 .row #full-text strong {
   color: #b12727;
   font-weight: bold;
+  font-size: 20px;
 }
 .row #full-text p {
   padding: 0px;
