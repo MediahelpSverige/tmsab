@@ -271,6 +271,15 @@ background:linear-gradient($blackgradient);
   }
 }
 
+#sale-form{
+	margin-top:15px;
+	margin-bottom:15px;
+
+
+h3{
+	margin-top:15px;
+	margin-bottom:10px;
+}
 
 .email-form{
 
@@ -290,6 +299,7 @@ background:linear-gradient($blackgradient);
 		text-align: left;
 		float: left;
 		font-size: 14px;
+		width: 100%;
 	}
 
 	input{
@@ -299,6 +309,9 @@ background:linear-gradient($blackgradient);
 }
 
 }
+
+}
+
 
 
 /*SWIPER STYLES*/
