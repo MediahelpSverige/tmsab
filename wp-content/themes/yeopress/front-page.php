@@ -75,13 +75,11 @@
 
 			<h4>Fyll i formuläret nedan så återkommer vi så fort vi kan!</h4>
 
-							<div class="email-form">
-												<div class="form-row">
+	<div class="email-form">
 
 							<?php echo do_shortcode('[contact-form-7 id="227" title="säljare"]'); ?>
 							</div>
-
-				</div>
+</div>
 </div>
 				</div>
 
