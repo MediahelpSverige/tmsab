@@ -49,7 +49,7 @@ function theme_enqueue_scripts(){
 
 	wp_enqueue_style('animate.min.css', get_bloginfo('template_url') . '/js/vendor/animate.css/animate.min.css');
 
-	wp_enqueue_style('custom.css', get_bloginfo('template_url') . '/css/custom.css');
+	wp_enqueue_style('custom.css', get_bloginfo('template_url') . '/css/custom.min.css');
 
 	wp_enqueue_style('responsive.css', get_bloginfo('template_url') . '/css/responsive.css');
 
