@@ -31,16 +31,9 @@ function theme_enqueue_scripts(){
 	wp_register_script('instafeed.js', get_bloginfo('template_url') . '/js/vendor/instafeed.js/instafeed.min.js');
 	wp_enqueue_script('instafeed.js');
 
-	wp_register_script('swiper', get_bloginfo('template_url') . '/js/vendor/Swiper/dist/js/swiper.js');
+	wp_register_script('swiper', get_bloginfo('template_url') . '/js/vendor/Swiper/dist/js/swiper.min.js');
 	wp_enqueue_script('swiper');
 
-
-
-	wp_register_script('masonry', get_bloginfo('template_url') . '/js/vendor/masonry/masonry.js');
-	wp_enqueue_script('masonry');
-
-	wp_register_script('imagesloaded', get_bloginfo('template_url') . '/js/vendor/imagesloaded/imagesloaded.js');
-	wp_enqueue_script('imagesloaded');
 
 	wp_register_script('livereload', 'http://localhost:35729/livereload.js?snipver=1', null, false, true);
 	wp_enqueue_script('livereload');

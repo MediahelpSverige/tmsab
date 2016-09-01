@@ -28,7 +28,7 @@ get_header();
 
 <div class="row">
 
-<div class="col-md-9">
+<div class="col-md-9 col-sm-9">
 	<div class="box-wrap">
 
 	<h3 class="title-border">Produkter</h3>
@@ -99,7 +99,7 @@ get_header();
 	
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-sm-3">
 	<div class="box-wrap">
 	<h3 class="title-border">Kontakta en säljare idag</h3>
 
