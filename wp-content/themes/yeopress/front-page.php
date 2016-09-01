@@ -59,13 +59,15 @@
 
 			<div class="col-md-6 col-sm-6">
 
+			<div class="worker">
+
 
 			<img src="<?php the_post_thumbnail_url();?>">
 
 			<h3><?php the_title();?></h3>
 			<div class="phone"><i class="fa fa-phone"></i><span><?php the_field('telefon');?></span><div class="clearfix"></div></div>
 			<div class="email"><i class="fa fa-envelope-o"></i><a href="mailto:<?php the_field('email'); ?>"><?php the_field('email');?></a><div class="clearfix"></div></div>
-
+</div>
 
 			</div>
 
@@ -74,29 +76,11 @@
 			<h4>Fyll i formuläret nedan så återkommer vi så fort vi kan!</h4>
 
 							<div class="email-form">
+												<div class="form-row">
 
 							<?php echo do_shortcode('[contact-form-7 id="227" title="säljare"]'); ?>
-							<form action="<?php bloginfo('url');?>">
-					<div class="form-row">
-					<label>Namn:</label>
-						<input type="text" name="name">
-					</div>
-					<div class="form-row">
-											<label>E-post:</label>
-						<input type="text" name="name">
-						</div>
-						<div class="form-row">
-											<label>Telefon:</label>
-						<input type="text" name="name">
-						</div>
-						<div class="form-row">
-											<label>Meddelande:</label>
-						<textarea name="message"></textarea>
-						</div>
-						<div class="form-row">
-						<input type="submit" name="skicka" value="Skicka">
-						</div>
-					</form>
+							</div>
+
 				</div>
 </div>
 				</div>
