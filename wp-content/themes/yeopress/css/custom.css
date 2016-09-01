@@ -1318,7 +1318,7 @@ section#facebook {
 }
 #intro img {
   max-height: 900px;
-  display: auto;
+  display: block;
   max-width: 100%;
 }
 
