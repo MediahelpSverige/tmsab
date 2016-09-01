@@ -234,14 +234,14 @@ body {
 body .wpcf7-form-control-wrap input {
   margin: 10px 0px;
   width: 100%;
-  border: 1px solid #ececec;
+  border: 1px solid #dad9d9;
   padding: 5px 10px;
   font-family: 'open-sans';
 }
 body .wpcf7-form-control-wrap textarea {
   margin: 10px 0px;
   width: 100%;
-  border: 1px solid #ececec;
+  border: 1px solid #dad9d9;
 }
 
 .boxout {
@@ -370,7 +370,7 @@ video {
 .box-wrap {
   margin: 30px 0px;
   background-color: white;
-  border: 1px solid #ececec;
+  border: 1px solid #dad9d9;
   padding: 19px;
 }
 .box-wrap iframe {
@@ -402,21 +402,24 @@ video {
   line-height: 24px;
 }
 
-.form-row {
+.email-form .form-row {
   display: block;
   width: 100%;
   clear: both;
   margin: 10px 0px;
   min-height: 40px;
 }
-.form-row textarea {
+.email-form .form-row textarea {
   float: right;
+  width: 100%;
 }
-.form-row label {
+.email-form .form-row label {
   display: block;
+  text-align: left;
   float: left;
+  font-size: 14px;
 }
-.form-row input {
+.email-form .form-row input {
   display: block;
   float: right;
 }

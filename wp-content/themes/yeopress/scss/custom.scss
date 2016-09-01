@@ -14,7 +14,7 @@ $secondaryColor: #ff0000;
 $sitegray: #949494;
 $border:1px solid $sitegray;
 $headerHeight: 5rem;
-$defaultborder: 1px solid #ececec;
+$defaultborder: 1px solid #dad9d9;
 $blackgradient: to top, #000000, rgba(255, 255, 255, 0) 40%;
 
 
@@ -272,6 +272,8 @@ background:linear-gradient($blackgradient);
 }
 
 
+.email-form{
+
 .form-row{
 	display:block;
 	width:100%;
@@ -281,16 +283,21 @@ background:linear-gradient($blackgradient);
 
 	textarea{
 		float: right;
+		width: 100%;
 	}
 	label{
 		display: block;
-		float: left
+		text-align: left;
+		float: left;
+		font-size: 14px;
 	}
 
 	input{
 		display: block;
 		float: right;
 	}
+}
+
 }
 
 

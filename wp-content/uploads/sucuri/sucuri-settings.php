@@ -1,2 +1,2 @@
 <?php exit(0); ?>
-{"sucuriscan_plugin_version":"1.8.1","sucuriscan_runtime":1472534505,"sucuriscan_emails_sent":1,"sucuriscan_last_email_at":1472534508}
+{"sucuriscan_plugin_version":"1.8.1","sucuriscan_runtime":1472534505,"sucuriscan_emails_sent":0,"sucuriscan_last_email_at":1472534508}
