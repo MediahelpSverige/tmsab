@@ -26,15 +26,89 @@
 			<div class="container">
 
 
+			<div class="row">
+				<div class="col-md-12" id="full-text">
+					<p>Traktor & Maskin i Sörmland AB är ett privatägt företag som verkar inom de gröna näringarna. Vi verkar i Sörmland och är återförsäljare för Massey Ferguson som är ett av de världsledande företagen inom lantbrukssektorn. Vi genomsyras av en äkta vilja att ge god service och se nöjda kunder. Långsiktiga relationer med våra kunder är viktigt för oss.</p>
+				</div>
+			</div>
+
+
 								<div class="col-md-8">
 
 
 			<div class="box-wrap">
 
-				<h3 class="title-border">Välkommen!</h3>
+				<h3 class="title-border">Kontakta en säljare idag!</h3>
 
 
-				<?php the_content(); ?>
+				<?php //the_content(); ?>
+
+				<?php $postargs = array('posts_per_page'=>'1', 'post_type' => 'worker', 'orderby' => 'rand')?>
+
+
+
+				<?php $posts = get_posts($postargs); 
+
+
+			//print_r($posts);
+
+			foreach( $posts as $post ) :
+				setup_postdata($post); ?>
+
+			<div class="row">
+
+			<div class="col-md-6 col-sm-6">
+
+
+			<img src="<?php the_post_thumbnail_url();?>">
+
+			<h3><?php the_title();?></h3>
+			<div class="phone"><i class="fa fa-phone"></i><span><?php the_field('telefon');?></span><div class="clearfix"></div></div>
+			<div class="email"><i class="fa fa-envelope-o"></i><a href="mailto:<?php the_field('email'); ?>"><?php the_field('email');?></a><div class="clearfix"></div></div>
+
+
+			</div>
+
+			<div class="col-md-6 col-sm-6">
+
+			<h4>Fyll i formuläret nedan så återkommer vi så fort vi kan!</h4>
+
+							<div class="email-form">
+
+							<?php do_shortcode('[contact-form-7 id="227" title="säljare"]')?>
+							<form action="<?php bloginfo('url');?>">
+					<div class="form-row">
+					<label>Namn:</label>
+						<input type="text" name="name">
+					</div>
+					<div class="form-row">
+											<label>E-post:</label>
+						<input type="text" name="name">
+						</div>
+						<div class="form-row">
+											<label>Telefon:</label>
+						<input type="text" name="name">
+						</div>
+						<div class="form-row">
+											<label>Meddelande:</label>
+						<textarea name="message"></textarea>
+						</div>
+						<div class="form-row">
+						<input type="submit" name="skicka" value="Skicka">
+						</div>
+					</form>
+				</div>
+</div>
+				</div>
+
+
+		<?php 	endforeach;
+
+		wp_reset_postdata()
+
+?>
+
+
 
 
 
@@ -78,10 +152,19 @@
 
 							<h3 class="title-border">Ta en rundtur på youtube!</h3>
 				<iframe width="640" height="360" src="https://www.youtube.com/embed/WsDP93MyflE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-				<p>Se fina bilder från våra faciliteter i Björkvik, bilderna är från 2014</p>
 
 				</div>
 				</div>
+
+							<div class="row">
+				<div class="col-md-12"  id="full-text">
+					<p>Traktor & Maskin i Sörmland verkar i hela Sörmland med försäljning och service av traktorer, tröskor och jordbruksrelaterade produkter. Vårt mål är att bli ett framstående maskinbolag i Sörmland och Er partner genom god service, spetskompetens och ny teknik.</p>
+
+					<strong>Har du några frågor och funderingar slå oss en signal på 0155-714 40 – Välkomna!</strong>
+				</div>
+			</div>
+
+
 			</div>
 		</section>
 		<!--<section id="youtube">
