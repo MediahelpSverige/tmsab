@@ -75,7 +75,7 @@
 
 							<div class="email-form">
 
-							<?php do_shortcode('[contact-form-7 id="227" title="säljare"]')?>
+							<?php echo do_shortcode('[contact-form-7 id="227" title="säljare"]'); ?>
 							<form action="<?php bloginfo('url');?>">
 					<div class="form-row">
 					<label>Namn:</label>
