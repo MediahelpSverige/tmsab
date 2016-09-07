@@ -22,13 +22,33 @@ get_header();
 
 <div class="col-md-9">
 
+<div class="row">
+
+<div class="col-md-6 col-sm-6">
+
 	<div class="box-wrap">
 
 <h3 class="title-border">Vi annonserar även på blocket!</h3>
 
 <a href="https://www.blocket.se/traktor--maskin-i-sormland"><img src="http://tmsab.mediahelpcrm.se/wp-content/uploads/2016/08/Blocket.se_logo.png"></a>
+</div>
+</div>
+
+<div class="col-md-6 col-sm-6">
+
+<div class="red-btn-wrap">
+	<div>
+		<a href="https://www.blocket.se/traktor--maskin-i-sormland">
+			<h3>Klicka här för vår blocketsida!</h3>
+		</a>
+	</div>
+</div>
 
 </div>
+
+</div>
+
+
 
 
 	<div class="box-wrap">

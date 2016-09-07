@@ -463,6 +463,33 @@ h3{
 
 	#produkter{
 
+
+		.red-btn-wrap {
+    height: 171px;
+    background-color: #b12727;
+    position: relative;
+
+    a{
+    	color: white;
+    }
+
+    h3{
+     	    /* display: inline-block; */
+    /* color: white; */
+    /* position: absolute; */
+    line-height: 171px;
+    font-size: 17px;
+    text-align: center;
+    /* top: 0px; */
+    /* bottom: 0px; */
+    /* left: 0px; */
+    vertical-align: middle;
+    /* right: 0px; */
+    margin: auto;
+
+    }
+}
+
 		.col-md-9 {
 
 			a{
