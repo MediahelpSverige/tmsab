@@ -544,6 +544,28 @@ video {
 .page-wrapper {
   margin-top: 4.75rem;
 }
+.page-wrapper #produkter .red-btn-wrap {
+  height: 171px;
+  background-color: #b12727;
+  position: relative;
+}
+.page-wrapper #produkter .red-btn-wrap a {
+  color: white;
+}
+.page-wrapper #produkter .red-btn-wrap h3 {
+  /* display: inline-block; */
+  /* color: white; */
+  /* position: absolute; */
+  line-height: 171px;
+  font-size: 17px;
+  text-align: center;
+  /* top: 0px; */
+  /* bottom: 0px; */
+  /* left: 0px; */
+  vertical-align: middle;
+  /* right: 0px; */
+  margin: auto;
+}
 .page-wrapper #produkter .col-md-9 a img {
   max-width: 100%;
   height: auto;
@@ -1318,7 +1340,7 @@ section#facebook {
 }
 #intro img {
   max-height: 900px;
-  display: auto;
+  display: block;
   max-width: 100%;
 }
 
