@@ -43,7 +43,13 @@
 
 				<?php //the_content(); ?>
 
-				<?php $postargs = array('posts_per_page'=>'1', 'post_type' => 'worker', 'orderby' => 'rand')?>
+				<?php $postargs = array('posts_per_page'=>'1', 'post_type' => 'worker', 'orderby' => 'rand', 'tax_query' => array( 
+		array(
+			'taxonomy' => 'uppdrag',
+			'field' => 'slug',
+			'terms' => 'saljare'
+			),
+		),)?>
 
 
 

@@ -23,11 +23,11 @@ get_header();
 <h1><?php the_title(); ?></h1>
 
 <div class="row">
-<div class="col-md-7">
+<div class="col-md-8">
 	<?php the_content(); ?>
 </div>
 
-<div class="col-md-5">
+<div class="col-md-4">
 		<div class="row">
 		<img src="<?php bloginfo('template_url')?>/images/fordon1.jpg">
 	</div>
