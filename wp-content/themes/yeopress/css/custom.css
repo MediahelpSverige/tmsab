@@ -98,6 +98,7 @@ table {
 
   #info-section #instafeed .insta {
     flex-basis: calc(100%/4);
+    width: 100%;
   }
 }
 @media (max-width: 995px) {
@@ -160,6 +161,7 @@ table {
 
   #info-section #instafeed .insta {
     flex-basis: calc(100%/3);
+    width: 100%;
   }
 
   .overlay-title h1 {
@@ -173,7 +175,6 @@ table {
 
   #welcome-section {
     height: 600px;
-    background-position: 10% 20%;
   }
 
   .page-content .tjanster .tjanst-item {
@@ -186,8 +187,13 @@ table {
   }
 }
 @media (max-width: 420px) {
+  #welcome-section {
+    height: 300px;
+  }
+
   #info-section #instafeed .insta {
     flex-basis: calc(100%/2);
+    width: 100%;
   }
 
   .welcomebox h1 {
@@ -869,6 +875,7 @@ body section {
 }
 body .page-back {
   background-color: #f9f9f9;
+  overflow-x: hidden;
 }
 body #insta-title {
   text-align: center;
@@ -1178,6 +1185,11 @@ section .container {
   padding: 15px;
   margin: 100px auto;
   max-width: 1280px;
+}
+@media (max-width: 700px) {
+  section .container {
+    padding: 0px;
+  }
 }
 section .container p {
   letter-spacing: 1px;

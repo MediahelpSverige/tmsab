@@ -82,6 +82,7 @@
 			.insta{
 
 				flex-basis: calc(100%/4);
+				width: 100%;
 
 			}
 		}
@@ -185,6 +186,7 @@
 			.insta{
 
 				flex-basis: calc(100%/3);
+				width: 100%;
 
 			}
 		}
@@ -223,7 +225,7 @@
 
 	#welcome-section{
 		height: 600px;
-		background-position: 10% 20%;
+		//background-position: 10% 20%;
 	}
 
 
@@ -260,16 +262,26 @@
 
 
 
+
+
+
 }
 
 
 @media(max-width:420px){
+
+
+			#welcome-section{
+		height: 300px;
+		//background-position: 10% 20%;
+	}
 
 		#info-section{
 		#instafeed{
 			.insta{
 
 				flex-basis: calc(100%/2);
+				width: 100%;
 
 			}
 		}

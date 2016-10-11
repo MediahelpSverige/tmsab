@@ -180,6 +180,16 @@ jQuery(window).load(function ($) {
 
 });
 */
+console.log(window.innerWidth);
+var windowW = window.innerWidth;
+if (windowW < 400) {
+
+	var items = 9;
+}else{
+
+	var items = 18;
+
+}
 
 console.log('footer');
 var feed = new Instafeed({
@@ -188,7 +198,7 @@ var feed = new Instafeed({
 
         accessToken: '3127068056.1677ed0.6dccf6aae5074bb08e9aef60f8227ca7',
         template: '<div class="insta grid-item"><a href="{{link}}"><div class="text"><small>{{caption}}</small></div><img src="{{image}}" /></a></div>',
-        limit: 18,
+        limit: items,
         resolution: 'standard_resolution',
 
          after: function() {

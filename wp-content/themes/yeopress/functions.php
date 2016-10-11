@@ -9,6 +9,7 @@
 
 
 add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
+
 function theme_enqueue_scripts(){
 
 	wp_register_script('modernizr', get_bloginfo('template_url') . '/js/modernizr.js');
@@ -52,6 +53,8 @@ function theme_enqueue_scripts(){
 	wp_enqueue_style('custom.css', get_bloginfo('template_url') . '/css/custom.css');
 
 	wp_enqueue_style('responsive.css', get_bloginfo('template_url') . '/css/responsive.css');
+
+	echo "qued";
 
 
 

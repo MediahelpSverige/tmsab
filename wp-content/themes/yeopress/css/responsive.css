@@ -44,6 +44,7 @@
 
   #info-section #instafeed .insta {
     flex-basis: calc(100%/4);
+    width: 100%;
   }
 }
 @media (max-width: 995px) {
@@ -106,6 +107,7 @@
 
   #info-section #instafeed .insta {
     flex-basis: calc(100%/3);
+    width: 100%;
   }
 
   .overlay-title h1 {
@@ -119,7 +121,6 @@
 
   #welcome-section {
     height: 600px;
-    background-position: 10% 20%;
   }
 
   .page-content .tjanster .tjanst-item {
@@ -132,8 +133,13 @@
   }
 }
 @media (max-width: 420px) {
+  #welcome-section {
+    height: 300px;
+  }
+
   #info-section #instafeed .insta {
     flex-basis: calc(100%/2);
+    width: 100%;
   }
 
   .welcomebox h1 {

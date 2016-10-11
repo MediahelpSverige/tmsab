@@ -958,6 +958,7 @@ body{
 
 	.page-back{
 		background-color:$backgroundColor;
+		overflow-x: hidden; 
 	}
 
 
@@ -1389,6 +1390,10 @@ section{
 
 
 		//border: 1px solid #D4D4D4;
+
+		@media(max-width:700px){
+			padding:0px;
+		}
 
 
 		p{
